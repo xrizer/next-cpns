@@ -6,11 +6,21 @@ import { ArrowRight, Check, Users, Brain, Target, BookOpen } from 'lucide-react'
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-white">
-      {/* Hero Section */}
-      <header className="bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div className="container mx-auto px-6 py-16">
+      {/* Hero Section with Abstract Gradient */}
+      <header className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-900 text-white overflow-hidden">
+        {/* Abstract Shapes */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-96 h-96 bg-blue-400 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          <div className="absolute top-0 right-0 w-96 h-96 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+          <div className="absolute -bottom-8 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
+          <div className="absolute -bottom-8 right-20 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+          {/* Professional Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-blue-900/50 to-blue-900/80"></div>
+        </div>
+        {/* Content */}
+        <div className="relative container mx-auto px-6 py-24">
           <div className="flex flex-col items-center text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-100">
               Next CPNS
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-2xl">
